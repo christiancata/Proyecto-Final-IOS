@@ -14,6 +14,6 @@ import CoreData
 class MedicalHistory: NSManagedObject {
     @NSManaged var name:String
     @NSManaged var bloodType:String
-    @NSManaged var surgeries:String
+    @NSManaged var allergies:String
     @NSManaged var diseases:String
 }

@@ -13,7 +13,7 @@ class ItemViewController: UIViewController {
     
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldBloodType: UITextField!
-    @IBOutlet weak var textViewSurgeries: UITextView!
+    @IBOutlet weak var textViewAllergies: UITextView!
     @IBOutlet weak var textViewDiseases: UITextView!
     
     var currentItem: NSManagedObject!
@@ -25,7 +25,7 @@ class ItemViewController: UIViewController {
         if(currentItem != nil) {
             textFieldName.text = currentItem.valueForKey("name") as! String
             textFieldBloodType.text = currentItem.valueForKey("bloodType") as! String
-            textViewSurgeries.text = currentItem.valueForKey("surgeries") as! String
+            textViewAllergies.text = currentItem.valueForKey("allergies") as! String
             textViewDiseases.text = currentItem.valueForKey("diseases") as! String
         }
 
@@ -44,13 +44,13 @@ class ItemViewController: UIViewController {
         if (currentItem != nil) {
             currentItem.setValue(textFieldName.text, forKey: "name");
             currentItem.setValue(textFieldBloodType.text, forKey: "bloodType");
-            currentItem.setValue(textViewSurgeries.text, forKey: "surgeries");
+            currentItem.setValue(textViewAllergies.text, forKey: "allergies");
             currentItem.setValue(textViewDiseases.text, forKey: "diseases");
         } else {
             let newMedicalHistory = MedicalHistory(entity:en!, insertIntoManagedObjectContext:contxt)
             newMedicalHistory.name = textFieldName.text!
             newMedicalHistory.bloodType = textFieldBloodType.text!
-            newMedicalHistory.surgeries = textViewSurgeries.text!
+            newMedicalHistory.allergies = textViewAllergies.text!
             newMedicalHistory.diseases = textViewDiseases.text!
         }
         

@@ -46,7 +46,7 @@
                             <outlet property="delegate" destination="bji-mL-l7e" id="7AF-wB-ZAr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="meT-RW-6DN">
+                    <navigationItem key="navigationItem" title="Proyecto Final - Medical History" id="meT-RW-6DN">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4zJ-aY-waq">
                             <connections>
                                 <segue destination="n3z-C9-nMd" kind="push" id="L7J-ob-uJz"/>
@@ -80,7 +80,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Surgeries" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJE-pV-aWX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allergies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJE-pV-aWX">
                                 <rect key="frame" x="5" y="155" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -107,7 +107,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="A4y-QL-0de">
+                    <navigationItem key="navigationItem" title="New Medical History" id="A4y-QL-0de">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Afb-Yc-4ZQ">
                             <connections>
                                 <action selector="savePress:" destination="n3z-C9-nMd" id="YBc-ZQ-QRc"/>
@@ -117,8 +117,8 @@
                     <connections>
                         <outlet property="textFieldBloodType" destination="VpB-kN-eb4" id="oit-z2-QUj"/>
                         <outlet property="textFieldName" destination="xZg-5f-NVb" id="3BA-xO-Hew"/>
+                        <outlet property="textViewAllergies" destination="XNR-HT-5i3" id="Ude-kE-OP7"/>
                         <outlet property="textViewDiseases" destination="AHZ-RI-DF5" id="ub7-6D-TIO"/>
-                        <outlet property="textViewSurgeries" destination="XNR-HT-5i3" id="MjY-lN-S6M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ML-F5-EvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
